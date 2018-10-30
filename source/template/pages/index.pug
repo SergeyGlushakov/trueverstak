@@ -1,0 +1,59 @@
+extends ../_template
+
+block variables
+	- var title = 'Home page'
+
+
+block content
+	//wrapper
+	.wrapper
+		include ../blocks/_header
+		//main
+		main.main
+			//banner
+			.banner
+				.container
+					//banner
+					.banner__pic
+						img(src="./assets/img/ad-horizontal.jpg", alt="баннер").banner__img
+			//mix
+			.mix
+				.container
+					//mix-2
+					//.mix-2
+						.mix-2__left 
+						.mix-2__right mix-2__left dsffdfddfd
+					//mix-3
+					//.mix-3
+						.mix-3__left mix-3__left
+						.mix-3__center mix-3__left
+						.mix-3__right mix-3__left
+					//mix__top
+					.mix__top
+						//mix__item
+						.mix__item
+							.mix__black
+							.mix__item-title Новые смартфоны покорили поклонников мобильной индустрии
+							.socials
+
+
+					//mix__bottom
+					.mix__bottom
+			//instruments
+			.news
+				.container
+					h2.news__title Новости IT
+
+					ul.news__list
+						li.news__item
+							a(href="#").news__link
+
+
+
+		include ../blocks/_footer
+
+		include ../common/_debug
+
+
+
+	//-include ../common/_greating

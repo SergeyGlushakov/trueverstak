@@ -1,0 +1,51 @@
+/*colors*/
+
+$accent: #ec1c1c;
+$text: #333333;
+$dark-jungle-green: #1c2026;
+$fff: #ffffff;
+$vermilion: #de4234;
+$black: #000000;
+$dark: #202225;
+$gray-light: #dfdfdf;
+$outer-space: #454749;
+$dark-gray: #292b2e;
+$dark-gray1: #a4a7ab;
+$gainsboro: #32526e;
+$white-smoke: #f5f5f5;
+$manatee: #a0a0a0;
+$carmine-pink: #dc4e41;
+$outer-space1: #42464c;
+$platinum: #e5e5e5;
+$white-smoke-light: #fafafa;
+$dark-jungle-green: #1c2025;
+$dark-jungle-green1: #1c2026;
+$bg: #fff;
+$white: #fff;
+/*base font-family*/
+
+$font: 'PTSans', Arial, sans-serif;
+/*base font-size*/
+
+$font-size: 16px;
+// layouts
+@import 'layout/smart-grid';
+@import 'layout/mixins';
+@import 'layout/fonts';
+@import 'layout/font-awesome';
+@import 'layout/adjustment';
+
+@import 'common/greating';
+
+// blocks
+@import 'blocks/header';
+@import 'blocks/search';
+@import 'blocks/sections';
+@import 'blocks/footer';
+
+/*.debug {
+  @include debug(rgba(0,0,0,0.1), 1px solid rgba( red,.3));
+  z-index: 0;
+  // z-index: -1;
+  top: 0;
+}*/

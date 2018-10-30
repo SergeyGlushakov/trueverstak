@@ -1,0 +1,41 @@
+//header
+header.header
+	//header__top
+	.header__top
+		//logo
+		a(href="/").logo
+			.logo__picture
+				img(src="./assets/img/content/my_photo_300.png", alt="").logo__img
+			.logo__title.logo_litera TRUE ВЕРСТАК
+
+		//nav.menu
+		nav.menu.menu_top
+
+			ul.menu__list
+				li.menu__item.active
+					a(href="#").menu__link новости IT
+				li.menu__item
+					a(href="#").menu__link блог
+				li.menu__item
+					a(href="#").menu__link инструменты
+				li.menu__item
+					a(href="#").menu__link javascript
+				li.menu__item
+					a(href="#").menu__link diy
+				li.menu__item
+					a(href="#").menu__link мои работы
+		//search
+		.search
+			.search__btn(title="Поиск по сайту...")
+				.fa.fa-search
+			//search__field
+			.search__field
+				form(action="/search.html")#cse-search-box.search__form
+					input(type="hidden", name="cx" value="partner-pub-xxx:xxx")
+					input(type="hidden", name="cof" value="FORID:10")
+					input(type="hidden", name="ie" value="UTF-8")
+					input(type="text", name="q" placeholder="Поиск по сайту...").search__input
+		//mobile-menu
+		.mobile-menu
+			.mobile-menu__button
+				i.fa.fa-bars
